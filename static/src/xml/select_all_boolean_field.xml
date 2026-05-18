@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-inherit="web.ListRenderer" t-inherit-mode="extension">
+        <xpath expr="//th[@t-if=&quot;column.type === 'field'&quot;]//span[hasclass('d-block')]" position="before">
+            <CheckBox t-if="column.widget === 'sm_select_all_boolean'"
+                      value="getSelectAllBooleanValue(column)"
+                      className="'d-flex m-0 me-1'"
+                      onChange="(value) => this.toggleSelectAllBoolean(column, value)"/>
+        </xpath>
+    </t>
+</templates>

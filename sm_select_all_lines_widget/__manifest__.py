@@ -40,6 +40,9 @@ odoo one2many select all, odoo editable list select all, all in one select all l
     'author': 'Steven Marp',
     'website': 'https://apps.odoo.com/apps/modules/browse?repo_maintainer_id=512936',
     'license': 'OPL-1',
+    'images': [
+        'static/description/banner.gif',
+    ],
     'depends': ['sale', 'purchase', 'account', 'mrp', 'stock', 'web'],
     'data': [
         'views/sale_order_views.xml',
